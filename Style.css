@@ -6,7 +6,9 @@
     font-family: "Gordita";
     src: url(./Assets/fonts/Gordita/Gordita\ Regular.woff) format("woff");
   }
-
+body{
+    background: #141414;
+}
 *{
     font-family:Gordita ;
 }
@@ -32,6 +34,7 @@ a{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 3;
 }
 .wrapper.Header{
     display: flex;
@@ -298,9 +301,583 @@ a{
     }
 }
 
+/* <!-- ////////////////////////////////////////////////////////////////////////////////////////Spotlight----- --> */
 
+#Spotlight{
+    margin: 100px auto 20px;
+}
+.wrapper.Spotlight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+.Spotlight-left{
+    width: 50%;
+}
+.Spotlight-left h1{
+    font-size: 40px;
+    color: #fff;
+    font-family: Gordita-Medium;
+}
+.Spotlight-left h1 span{
+    color: #D45945;
+    font-family: Gordita-Medium;
+}
+.Spotlight-left p{
+    font-size: 14px;
+    color: #cccad0;
+    width: 70%;
+    margin: 25px 0;
+    line-height: 2rem;
+}
+.spotlight-get-start{
+    background: linear-gradient(160deg,#D45945,#A14D9B);
+    border: none;
+    border-radius: 15px;
+    width: 35%;
+    color: #fff ;
+    padding:5px 10px;
+    text-align: center;
+}
+.spotlight-get-start h6{
+    font-size: 13px;
+    color: #bbb9c0 ;
+    margin: 5px auto;
+}
+.spotlight-get-start h5{
+    font-size: 13px;
+    color: #fff ;
+    margin: 5px auto;
+}
 
+.Spotlight-right{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.pattern-one{
+    display: block;
+    width: 300px;
+    height: 150px;
+    filter: blur(50px);
+    margin-top: 100px;
+}
+.pattern-two{
+    display: block;
+    width: 300px;
+    height: 200px;
+    filter: blur(50px);
+}
+.Spotlight-right-img{
+    display: block;
+    width: 38%;
+    margin: auto;    
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
 
-
+/* ------------------------------------------------------------------1440px responsive-----Spotlight-----*/
+@media all and (max-width: 1440px){
+    #Spotlight{
+        margin: 100px auto 20px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px 0;
+    }
+    .Spotlight-left{
+        width: 50%;
+    }
+    .Spotlight-left h1{
+        font-size: 40px;
+        color: #fff;
+        font-family: Gordita-Medium;
+        width: 80%;
+    }
+    .Spotlight-left h1 span{
+        color: #D45945;
+        font-family: Gordita-Medium;
+    }
+    .Spotlight-left p{
+        font-size: 14px;
+        color: #cccad0;
+        width: 70%;
+        margin: 25px 0;
+        line-height: 2rem;
+    }
+    .spotlight-get-start{
+        background: linear-gradient(160deg,#D45945,#A14D9B);
+        border: none;
+        border-radius: 15px;
+        width: 30%;
+        color: #fff ;
+        padding:8px 10px;
+        text-align: center;
+    }
+    .spotlight-get-start h6{
+        font-size: 13px;
+        color: #bbb9c0 ;
+        margin: 5px auto;
+    }
+    .spotlight-get-start h5{
+        font-size: 13px;
+        color: #fff ;
+        margin: 5px auto;
+    }
+    
+    .Spotlight-right{
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+    .pattern-one{
+        display: block;
+        width: 300px;
+        height: 150px;
+        filter: blur(50px);
+        margin-top: 100px;
+    }
+    .pattern-two{
+        display: block;
+        width: 300px;
+        height: 200px;
+        filter: blur(50px);
+    }
+    .Spotlight-right-img{
+        display: block;
+        width: 38%;
+        margin: auto;    
+        position: absolute;
+        top: 100px;
+        right: 100px;
+    }
+}
+/* ------------------------------------------------------------------980px responsive-----Spotlight-----*/
+@media all and (max-width: 980px){
+    #Spotlight{
+        margin: 100px auto 20px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 70px 0;
+    }
+    .Spotlight-left{
+        width: 50%;
+    }
+    .Spotlight-left h1{
+        font-size: 35px;
+        color: #fff;
+        font-family: Gordita-Medium;
+        width: 90%;
+    }
+    .Spotlight-left h1 span{
+        color: #D45945;
+        font-family: Gordita-Medium;
+    }
+    .Spotlight-left p{
+        font-size: 12px;
+        color: #cccad0;
+        width: 70%;
+        margin: 25px 0;
+        line-height: 2rem;
+    }
+    .spotlight-get-start{
+        background: linear-gradient(160deg,#D45945,#A14D9B);
+        border: none;
+        border-radius: 15px;
+        width: 35%;
+        color: #fff ;
+        padding:8px 10px;
+        text-align: center;
+    }
+    .spotlight-get-start h6{
+        font-size: 13px;
+        color: #bbb9c0 ;
+        margin: 5px auto;
+    }
+    .spotlight-get-start h5{
+        font-size: 13px;
+        color: #fff ;
+        margin: 5px auto;
+    }
+    
+    .Spotlight-right{
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+    .pattern-one{
+        display: block;
+        width: 300px;
+        height: 150px;
+        filter: blur(50px);
+        margin-top: 100px;
+    }
+    .pattern-two{
+        display: block;
+        width: 300px;
+        height: 200px;
+        filter: blur(50px);
+    }
+    .Spotlight-right-img{
+        display: block;
+        width: 40%;
+        margin: auto;    
+        position: absolute;
+        top: 150px;
+        right: 80px;
+    }
+}
+/* ------------------------------------------------------------------768px responsive-----Spotlight-----*/
+@media all and (max-width: 768px){
+    #Spotlight{
+        margin: 100px auto 20px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 70px 0;
+    }
+    .Spotlight-left{
+        width: 50%;
+    }
+    .Spotlight-left h1{
+        font-size: 30px;
+        color: #fff;
+        font-family: Gordita-Medium;
+        width: 90%;
+    }
+    .Spotlight-left h1 span{
+        color: #D45945;
+        font-family: Gordita-Medium;
+    }
+    .Spotlight-left p{
+        font-size: 10px;
+        color: #cccad0;
+        width: 70%;
+        margin: 25px 0;
+        line-height: 1.5rem;
+    }
+    .spotlight-get-start{
+        background: linear-gradient(160deg,#D45945,#A14D9B);
+        border: none;
+        border-radius: 15px;
+        width: 35%;
+        color: #fff ;
+        padding:8px 10px;
+        text-align: center;
+    }
+    .spotlight-get-start h6{
+        font-size: 10px;
+        color: #bbb9c0 ;
+        margin: 5px auto;
+    }
+    .spotlight-get-start h5{
+        font-size: 10px;
+        color: #fff ;
+        margin: 5px auto;
+    }
+    
+    .Spotlight-right{
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+    .pattern-one{
+        display: block;
+        width: 200px;
+        height: 80px;
+        filter: blur(50px);
+        margin-top: 100px;
+    }
+    .pattern-two{
+        display: block;
+        width: 200px;
+        height: 100px;
+        filter: blur(50px);
+    }
+    .Spotlight-right-img{
+        display: block;
+        width: 40%;
+        margin: auto;    
+        position: absolute;
+        top: 130px;
+        right: 10px;
+    }
+}
+/* ------------------------------------------------------------------640px responsive-----Spotlight-----*/
+@media all and (max-width: 640px){
+    #Spotlight{
+        margin: 70px auto 20px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .Spotlight-left{
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .Spotlight-left h1{
+        font-size: 33px;
+        color: #fff;
+        font-family: Gordita-Medium;
+        width: 100%;
+    }
+    .Spotlight-left h1 span{
+        color: #D45945;
+        font-family: Gordita-Medium;
+    }
+    .Spotlight-left p{
+        font-size: 13px;
+        color: #cccad0;
+        width: 100%;
+        margin: 25px 0;
+        line-height: 1rem;
+    }
+    .spotlight-get-start{
+        background: linear-gradient(160deg,#D45945,#A14D9B);
+        border: none;
+        border-radius: 15px;
+        width: 35%;
+        margin: auto;
+        color: #fff ;
+        padding:8px 10px;
+        text-align: center;
+    }
+    .spotlight-get-start h6{
+        font-size: 12px;
+        color: #bbb9c0 ;
+        margin: 5px auto;
+    }
+    .spotlight-get-start h5{
+        font-size: 12px;
+        color: #fff ;
+        margin: 5px auto;
+    }
+    
+    .Spotlight-right{
+        width: 100%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+    .pattern-one{
+        display: block;
+        width: 200px;
+        height: 80px;
+        filter: blur(50px);
+        margin-top: 100px;
+    }
+    .pattern-two{
+        display: block;
+        width: 200px;
+        height: 100px;
+        filter: blur(50px);
+    }
+    .Spotlight-right-img{
+        display: block;
+        width: 75%;
+        margin: auto;
+        position: absolute;
+        top: 350px;
+        right: 20px;
+    }
+}
+/* ------------------------------------------------------------------480px responsive-----Spotlight-----*/
+@media all and (max-width: 480px){
+    #Spotlight{
+        margin: 70px auto 20px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .Spotlight-left{
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .Spotlight-left h1{
+        font-size: 30px;
+        color: #fff;
+        font-family: Gordita-Medium;
+        width: 100%;
+    }
+    .Spotlight-left h1 span{
+        color: #D45945;
+        font-family: Gordita-Medium;
+    }
+    .Spotlight-left p{
+        font-size: 12px;
+        color: #cccad0;
+        width: 100%;
+        margin: 25px 0;
+        line-height: 1rem;
+    }
+    .spotlight-get-start{
+        background: linear-gradient(160deg,#D45945,#A14D9B);
+        border: none;
+        border-radius: 15px;
+        width: 35%;
+        margin: auto;
+        color: #fff ;
+        padding:8px 10px;
+        text-align: center;
+    }
+    .spotlight-get-start h6{
+        font-size: 8px;
+        color: #bbb9c0 ;
+        margin: 5px auto;
+    }
+    .spotlight-get-start h5{
+        font-size: 7px;
+        color: #fff ;
+        margin: 5px auto;
+    }
+    
+    .Spotlight-right{
+        width: 100%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+    .pattern-one{
+        display: block;
+        width: 200px;
+        height: 80px;
+        filter: blur(50px);
+        margin-top: 100px;
+    }
+    .pattern-two{
+        display: block;
+        width: 200px;
+        height: 100px;
+        filter: blur(50px);
+    }
+    .Spotlight-right-img{
+        display: block;
+        width: 75%;
+        margin: auto;
+        position: absolute;
+        top: 350px;
+        right: 20px;
+    }
+}
+/* ------------------------------------------------------------------360px responsive-----Spotlight-----*/
+@media all and (max-width: 360px){
+    #Spotlight{
+        margin: 70px auto 20px;
+    }
+    .wrapper.Spotlight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .Spotlight-left{
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .Spotlight-left h1{
+        font-size: 25px;
+        color: #fff;
+        font-family: Gordita-Medium;
+        width: 100%;
+        margin: auto;
+    }
+    .Spotlight-left h1 span{
+        color: #D45945;
+        font-family: Gordita-Medium;
+    }
+    .Spotlight-left p{
+        font-size: 10px;
+        color: #cccad0;
+        width: 100%;
+        margin: auto;
+        margin: 25px 0;
+        line-height: 1rem;
+    }
+    .spotlight-get-start{
+        background: linear-gradient(160deg,#D45945,#A14D9B);
+        border: none;
+        border-radius: 15px;
+        width: 35%;
+        margin: auto;
+        color: #fff ;
+        padding:8px 10px;
+        text-align: center;
+    }
+    .spotlight-get-start h6{
+        font-size: 8px;
+        color: #bbb9c0 ;
+        margin: 5px auto;
+    }
+    .spotlight-get-start h5{
+        font-size: 7px;
+        color: #fff ;
+        margin: 5px auto;
+    }
+    
+    .Spotlight-right{
+        width: 100%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+    .pattern-one{
+        display: block;
+        width: 200px;
+        height: 80px;
+        filter: blur(50px);
+        margin-top: 100px;
+    }
+    .pattern-two{
+        display: block;
+        width: 200px;
+        height: 100px;
+        filter: blur(50px);
+    }
+    .Spotlight-right-img{
+        display: block;
+        width: 75%;
+        margin: auto;
+        position: absolute;
+        top: 350px;
+        right: 20px;
+    }
+}
 
 
